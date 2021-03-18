@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Carthageo Test</title>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <!-- leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <style>#carte { height: 500px; background-color: aqua; }
+  .leaflet-control.info{
+    background-color: antiquewhite;
+  }
+  </style>
+
+  <style>#USAMap { height: 500px; background-color: aqua; }</style>
+  <style>#geomap { height: 500px; background-color: pink; }</style>
+
+  <style> .info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    }
+    .info img{
+      height: 50px;
+    }
+    </style>
+
+  <style>.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+   }</style>
+
+  <style>.legend {
+  line-height: 18px;
+  color: #555;
+
+  }</style>
+
+
+  <style>.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+  }</style>
+
+
+</head>
+
+
+
+<body>
+
+  <div class="container">
+    <%- include("nav") -%> 
+    <h1>Bientôt fin d'étude des Carthagéos</h1>
+    <h2> Exo 1 - Carte des Canards</h2>
+    <div id="carte"></div>
+    <h2> Exo 2 - Carte thématique </h2>
+    <div id="USAMap"></div>
+    <h2> Exo 3 - Carte geoserver</h2>
+    <div id="geomap"></div>
+    <h2> Exo 4 - Chartes graphiques</h2>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <img src="img/logo.png" alt="image pas chargee">
+
+    <%- include("footer") -%>
+
+  </div>
+
+<!--chercher exoleaflet.js sur folder js(ordre est important. FA)-->
+
+
+<script src="js/us-states.js"></script>
+<script src="js/exoleaflet.js"></script>
+<script src="js/mychat.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

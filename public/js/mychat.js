@@ -1,9 +1,9 @@
 //selection de date(en utilisant le olympiad_id)
+$('#container').html('');
+$('#container').html('<canvas id="myChart"></canvas>');
+
 var select_date = document.getElementById('year');
 //year.addEventListener('submit', valide);
-select_date.onchange = function(){
-  alert(this.value)
-}
 document.getElementById('year').addEventListener('change',valide)
 function valide(e){
   //j'empêche le comportement par défaut du formulaire
@@ -22,6 +22,7 @@ function valide(e){
   .then(r => r.json())
   .then((r) => {
     console.log(r);
+
   var ctx = document.getElementById('myChart').getContext('2d');
   var labels = []
   for (i=0; i<r.features.length; i++){

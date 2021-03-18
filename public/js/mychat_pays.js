@@ -52,7 +52,8 @@ function valide2(e){
   .then((r) => {
     console.log(r);
 
-
+  $('#container').html('');
+  $('#container').html('<canvas id="myChartPays"></canvas>');
   var ctx = document.getElementById('myChartPays').getContext('2d');
 
 
