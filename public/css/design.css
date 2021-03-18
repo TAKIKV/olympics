@@ -3,7 +3,9 @@
   color: grey;
 }
 #logo {background-color:white;}
-
+#footer{
+ background-color: 'black',
+}
 
 * {
   -webkit-box-sizing: border-box;

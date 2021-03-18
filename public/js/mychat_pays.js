@@ -74,7 +74,6 @@ function valide2(e){
   for (i=0; i<r.features.length; i++){
     bronzes.push (r.features[i].propertie.bronze)
   }
-
     var dataensp = {
       labels: labels,
       datasets: [
@@ -95,16 +94,14 @@ function valide2(e){
           }
       ]
     };
-
-
   var myLineChart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data: dataensp,
       options: {
         responsive : true,
         scales: {
           yAxes: [{
-            stacked: true
+            stacked: true,
           }]
         }
       }
