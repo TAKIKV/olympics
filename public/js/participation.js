@@ -1,7 +1,7 @@
 // alert('Script exoleaflet.js est bien chargé!!!, Merci de votre dévéloppement. '
 // setview = latitude, longitude, niv.zoom
 var mapboxAccessToken = 'pk.eyJ1IjoidGFraWtvdiIsImEiOiJja2x1cTk0Y3AwOWhmMm9wbHk1cGlwbmdhIn0.4IZ_FJBkcBndgp2fdCWaIQ';
-var carte = L.map('carte').setView([20, 0], 2);
+var carte = L.map('carte').setView([20, 0], 1.5);
 
 // Je créé ma Mapbox du monde à partir d'OpenStreetMap
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {

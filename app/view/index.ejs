@@ -21,6 +21,25 @@
   {
     width: 1000px;
   }
+  #arrowg {
+    position: absolute;
+    left: 12%;
+    top: 400px;
+    transform: rotate(180deg);
+  }
+  #arrowg img {
+    transform: mo -rotate(180deg);
+  }
+  #arrowd {
+    position: absolute;
+    left: 80%;
+    top: 400px;
+  }
+  .row img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   </style>
 
   <!-- page const -->
@@ -48,13 +67,10 @@
 
   <div id="featured">
     <div class="container">
+
       <div class="row">
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)" id ="leftbutton">
-          <img onclick="plusDivs(-1)" src="https://www.flaticon.com/svg/vstatic/svg/271/271228.svg?token=exp=1615997266~hmac=b9e738dda7893d7edbbf4bc16b40c7f7" alt="&#10094;" width="20" class="rotation180">
-        </button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1)"id ="rightbutton">
-          <img src="https://www.flaticon.com/svg/vstatic/svg/271/271228.svg?token=exp=1615997266~hmac=b9e738dda7893d7edbbf4bc16b40c7f7" alt="&#10095;" width="20">
-        </button>
+          <div id="arrowg"><img onclick="plusDivs(-1)" src="https://www.flaticon.com/svg/vstatic/svg/271/271228.svg?token=exp=1615997266~hmac=b9e738dda7893d7edbbf4bc16b40c7f7" alt="&#10094;" width="20" class="rotation180"></div>
+          <div id="arrowd"><img onclick="plusDivs(+1)" src="https://www.flaticon.com/svg/vstatic/svg/271/271228.svg?token=exp=1615997266~hmac=b9e738dda7893d7edbbf4bc16b40c7f7" alt="&#10095;" width="20"></div>
         <div class="Slide">
           <section>
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Bundesarchiv_Bild_183-G00630%2C_Sommerolympiade%2C_Siegerehrung_Weitsprung.jpg?uselang=fr" alt="1936" id="events">
@@ -331,24 +347,7 @@
 
 <%- include("footer") -%>
 
-<<<<<<< HEAD
 
-
-</body>
-
-<!--
-<body>
-=======
->>>>>>> a0e9e01faa4a259184b4a338a9c7f06f192cc986
-  <div class="container">
-    <%- include("nav") -%>
-    <h1>Site des Jeux Olympiques</h1>
-    <%- include("footer") -%>
-  </div>
-<<<<<<< HEAD
-</body> -->
-=======
   <script src="js/init.js"></script>
 </body>
->>>>>>> a0e9e01faa4a259184b4a338a9c7f06f192cc986
 </html>
