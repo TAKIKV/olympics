@@ -1,4 +1,4 @@
-// Ce ficher js crée pour la connection serveur bref center of site.  
+// Ce ficher js crée pour la connection serveur bref center of site.
 
 // Import express
 const express = require('express');
@@ -33,7 +33,7 @@ apiRoutes(app);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'app/view'));
 
-// app routes 
+// app routes
 // Importer les apps dans le serveur.js
 app.get('/', (req, res) => {
   // sur la route '/' on affiche le rendu de la page app/view/index.ejs
@@ -42,6 +42,8 @@ app.get('/', (req, res) => {
 app.get('/map', (req, res) => { res.render('map') });
 app.get('/exo', (req, res) => { res.render('exoleaflet') });
 app.get('/chat', (req, res) => { res.render('mychat') });
+app.get('/google', (req, res) => { res.render('google') });
+
 // Connect to postgresql and set connection variable
 
 // Launch app to listen to specified port
