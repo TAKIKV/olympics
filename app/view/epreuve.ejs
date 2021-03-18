@@ -25,15 +25,19 @@
   <script src="https://unpkg.com/geojson-popup@2.0.0-beta#._.js"></script>
 
 
+
+
 <!-- def #carte is my map on the page epreuve -->
-  <style>#carte { height: 650px; background-color: aqua; }
+  <style>
+  #carte { height: 650px; background-color: aqua; }
+
   .leaflet-control.info{
-    background-color: antiquewhite;
+    background-color: grey;
   }
   </style>
-  <!-- <style>#USMap { height: 500px; background-color: aqua; }</style> -->
-  <!-- <style>#geomap { height: 500px; background-color: pink; }</style> -->
-  <style>#logo { height:auto ;width:200px; background-color: white; }
+
+  <style>
+  #logo { height:auto ;width:200px; background-color: white; }
   .leaflet-control.info{
     background-color: antiquewhite;
   }
@@ -41,11 +45,11 @@
 
   <style>
   .info {
-    padding: 6px 8px;
+    padding: 10px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: white;
     background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 60px rgba(0,0,0,0.2);
     border-radius: 5px;
     }
     .info img{
@@ -53,7 +57,8 @@
     }
   </style>
 
-  <style>.info h4 {
+  <style>
+  .info h4 {
     margin: 0 0 5px;
     color: #777;
    }</style>
@@ -112,9 +117,10 @@
 </head>
 
 <body>
+
   <div class="container">
     <%- include("nav") -%>
-    <h1>Épreuves & Nombre de médailles des Jeux Olympiques</h1>
+    <h1>Nombre de médailles des Jeux Olympiques</h1>
     <h2>Information cartographique</h2>
     <div id="carte"></div>
 
@@ -124,6 +130,10 @@
      <a href="#tabpage1">Date</a>
      <a href="#tabpage2">Pays</a>
    </p>
+
+
+
+
 
  <div id="tabbody">
     <div id="tabpage1">
