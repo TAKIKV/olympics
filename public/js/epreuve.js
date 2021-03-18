@@ -38,22 +38,6 @@ setInterval(function(){
     }, 2000);
 }, 4000);
 
-
-
-
-// var marker = L.marker([37.985096, 23.727036], {icon: summer}).addTo(mymap);
-// marker.bindPopup("<form action="#" method="get" id="Date"><fieldset><select name="date"><option class="date" type="option" id="1"><b style='color:red'>1896 : Athènes</b><br><img id=logo src=img/1896.jpg></select></fieldset></form></option>").openPopup();
-
-
-
-// <b style='color:red'>
-//   1896 : Athènes
-// </b>
-// <br>
-// <img id=logo src=img/1896.jpg><a href='http://osm.org/copyright'>OpenStreetMap</a>
-
-
-
 var marker = L.marker([37.985096, 23.727036], {icon: summer}).addTo(mymap);
 marker.bindPopup(`
   <div class="container"><b style='color:red'>Athènes</b></div>
